@@ -179,8 +179,6 @@ function! SetColors()
     hi CursorLine term=bold cterm=bold ctermbg=236
 
     " Add a bit extra margin to the left
-    set foldcolumn=2
-    highlight FoldColumn ctermbg=235
 
     highlight SpecialKey ctermfg=238
 
