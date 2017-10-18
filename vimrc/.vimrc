@@ -422,3 +422,4 @@ map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
 map <leader>nf :NERDTreeFind<cr>
 colorscheme Benokai
+autocmd vimenter * NERDTree
