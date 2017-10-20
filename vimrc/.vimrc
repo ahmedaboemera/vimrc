@@ -6,7 +6,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=/home/ahmali/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -29,7 +29,6 @@ Plugin 'sjl/gundo.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-scripts/AutoComplPop'
-Plugin 'ervandew/supertab' 
 Plugin 'romainl/Apprentice'
 Plugin 'jiangmiao/auto-pairs'
 
@@ -71,10 +70,10 @@ let mapleader=" "
 set laststatus=2
 set noshowmode
 set showcmd
-set tabstop=2       " number of visual spaces per TAB
-set softtabstop=2   " number of spaces in tab when editing
-set shiftwidth=2
-set tabstop=2
+set tabstop=4       " number of visual spaces per TAB
+set softtabstop=4   " number of spaces in tab when editing
+set shiftwidth=4
+set tabstop=4
 set expandtab
 set smarttab
 set ai "Auto indent
@@ -109,10 +108,6 @@ set backspace=indent,eol,start
 " Fast saving
 nmap <leader>w :w!<cr>
 noremap <leader>q :q<cr>
-
-" :W sudo saves the file 
-" (useful for handling the permission-denied error)
-command W w !sudo tee % > /dev/null
 
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
@@ -423,3 +418,7 @@ colorscheme Benokai
 autocmd vimenter * NERDTree
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+set tabstop=4       " number of visual spaces per TAB
+set softtabstop=4   " number of spaces in tab when editing
+set shiftwidth=4
+set tabstop=4
